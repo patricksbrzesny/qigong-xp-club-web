@@ -3,65 +3,228 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Qi Gong XP Club – Qigong Experience, werktags 7:30 Uhr · Schwarz auf Weiss AG eingestellt</title>
-<meta name="description" content="Die Schwarz auf Weiss AG hat ihren Geschäftsbetrieb zum 05.09.2026 eingestellt. Neu: Qi Gong XP Club – werktags um 7:30 Uhr 20 Minuten Qi Gong im Chen-Stil und 20 Minuten Feedback der Meisterin. Live in Stuttgart-Möhringen oder online. 100 € im Monat.">
-<link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Happy By Qi Gong XP – Qi Gong XP Club, werktags 7:30 Uhr</title>
+<meta name="description" content="Happy By Qi Gong XP: werktags 7:30–8:00 Uhr 15 Minuten Chen Qi Gong und 15 Minuten Pushing Hands, übergehend in Paartanz. Live in Stuttgart-Möhringen oder online. Club Membership 100 € pro Monat.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --ink:#111; --paper:#fff; --soft:#f5f3ef; --line:#e3e0da; --muted:#5d5a55;
+    --accent:#b5452a; --accent-soft:#f6e9e4;
+    --max:1080px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --serif:Georgia,"Times New Roman",serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  .draft-bar{background:var(--accent);color:#fff;text-align:center;font-size:14px;padding:6px 12px;letter-spacing:.02em}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em;text-decoration:none}
+  .logo svg{width:30px;height:30px}
+  nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;font-size:15px}
+  nav a{text-decoration:none;color:var(--muted)}
+  nav a:hover{color:var(--ink)}
+  .btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:13px 24px;border-radius:999px;font-weight:600;font-size:16px;border:2px solid var(--ink);transition:.2s}
+  .btn:hover{background:var(--accent);border-color:var(--accent)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn.small{padding:8px 16px;font-size:14px}
+
+  /* Hero */
+  .hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px;padding-top:96px;padding-bottom:96px}
+  .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:13px;color:var(--accent);font-weight:700;margin:0 0 14px}
+  .hero .eyebrow{color:#e9a48f}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2;margin:0 0 .5em}
+  h1{font-size:clamp(40px,6vw,68px)}
+  h2{font-size:clamp(30px,4vw,42px)}
+  h3{font-size:22px}
+  .hero p.tagline{font-family:var(--serif);font-style:italic;font-size:19px;color:#e9a48f;margin:-6px 0 18px;max-width:36em}
+  .hero p.lead{font-size:20px;color:#d8d5cf;max-width:34em}
+  .hero .facts{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 34px;padding:0;list-style:none}
+  .hero .facts li{border:1px solid #444;border-radius:999px;padding:6px 14px;font-size:15px;color:#eee}
+  .hero .btn{background:#fff;color:var(--ink);border-color:#fff}
+  .hero .btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+  .hero .btn.ghost{background:transparent;color:#fff;border-color:#666;margin-left:10px}
+  .hero-art{display:flex;justify-content:center}
+  .hero-art svg{width:100%;max-width:340px;height:auto}
+
+  section{padding:88px 0}
+  section.alt{background:var(--soft)}
+  .intro{max-width:44em;color:var(--muted);font-size:18px;margin-bottom:40px}
+
+  /* Timeline */
+  .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+  .tl{padding:28px 26px;border-right:1px solid var(--line)}
+  .tl:last-child{border-right:none}
+  .tl .time{font-family:var(--serif);font-size:30px}
+  .tl .dur{display:inline-block;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:13px;padding:3px 10px;border-radius:999px;margin:6px 0 12px}
+  .tl p{margin:0;color:var(--muted)}
+  .bar{display:flex;height:10px;border-radius:999px;overflow:hidden;margin:28px 0 8px}
+  .bar span:first-child{flex:1;background:var(--ink)}
+  .bar span:last-child{flex:1;background:var(--accent)}
+  .bar-legend{display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
+
+  /* Cards */
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;position:relative}
+  .card .num{font-family:var(--serif);color:var(--accent);font-size:15px;letter-spacing:.1em}
+  .card h3{margin-top:6px}
+  .card .zh{color:var(--muted);font-size:14px;font-style:italic;margin:-6px 0 10px}
+  .card p{margin:0 0 10px}
+  .card .effect{border-top:1px dashed var(--line);padding-top:10px;margin-top:12px;font-size:15px;color:var(--muted)}
+  .card .effect strong{color:var(--ink)}
+  .card.feature{grid-column:1/-1;background:var(--ink);color:#fff;border-color:var(--ink);display:grid;grid-template-columns:1fr 200px;gap:30px;align-items:center}
+  .card.feature .zh,.card.feature .effect{color:#cfcac2}
+  .card.feature .effect{border-color:#444}
+  .card.feature .effect strong{color:#fff}
+  .card.feature svg{width:100%;height:auto}
+
+  /* Sitting */
+  .sit{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+  .sit-art{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;justify-content:center}
+  .sit-art svg{width:100%;max-width:280px;height:auto}
+  dl.steps{margin:0}
+  dl.steps dt{font-weight:700;margin-top:18px;display:flex;align-items:center;gap:10px}
+  dl.steps dt::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+  dl.steps dd{margin:4px 0 0 18px;color:var(--muted)}
+  .note{background:var(--accent-soft);border-left:4px solid var(--accent);padding:16px 20px;border-radius:0 10px 10px 0;margin-top:28px;font-size:16px}
+  .tag{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;margin-right:8px;vertical-align:2px}
+
+  /* Abschnitt-Layouts */
+  .lead-quote{font-family:var(--serif);font-size:22px;line-height:1.5;max-width:40em;margin:0 0 14px}
+  .form3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:36px 0 48px}
+  .form3 .q h3{margin:0 0 8px}
+  .steps5{list-style:none;margin:0 0 14px;padding:0;border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+  .steps5 li{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:20px 26px;border-bottom:1px solid var(--line)}
+  .steps5 li:last-child{border-bottom:none}
+  .steps5 .min{font-family:var(--serif);font-size:26px;color:var(--accent);line-height:1.1}
+  .steps5 .min small{display:block;font-family:var(--font);font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .steps5 h3{font-size:20px;margin:0 0 4px}
+  .steps5 p{margin:0;color:var(--muted)}
+  .sub{font-family:var(--serif);font-size:26px;margin:48px 0 18px}
+  .qlist{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .qlist .q{padding:22px}
+  .qlist .q .mark{font-size:36px}
+  .qlist .q p.big{font-size:19px;margin:6px 0 0}
+  .copylines{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .copylines p{margin:0;font-family:var(--serif);font-size:19px;border-left:3px solid var(--accent);padding-left:16px}
+  @media (max-width:860px){.form3,.copylines,.qlist{grid-template-columns:1fr}.steps5 li{grid-template-columns:56px 1fr;padding:18px}}
+  /* Karten */
+  .questions{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:10px}
+  .q{border:1px solid var(--line);border-radius:14px;padding:30px;background:#fff}
+  .q .mark{font-family:var(--serif);font-size:56px;line-height:1;color:var(--accent)}
+  .q p.big{font-family:var(--serif);font-size:24px;margin:8px 0 10px;color:var(--ink)}
+  .q p{color:var(--muted);margin:0}
+  .q p.big{color:var(--ink);margin:8px 0 10px}
+
+  /* About */
+  .people{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .person{display:flex;gap:22px;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:28px;background:#fff}
+  .avatar{flex:none;width:84px;height:84px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:30px}
+  .person.q2 .avatar{background:var(--accent)}
+  .person .role{color:var(--accent);font-weight:600;font-size:15px;margin:-6px 0 8px}
+  .person p{margin:0;color:var(--muted)}
+  .ph{background:#fff6c9;color:#6b5600;padding:0 4px;border-radius:3px;font-size:.92em}
+  .card.feature .ph,.hero .ph,footer .ph,.contact .ph{background:#3a3524;color:#ffe58a}
+
+  /* Pricing */
+  .pricing{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+  .price-card{background:var(--ink);color:#fff;border-radius:14px;padding:40px}
+  .price{font-family:var(--serif);font-size:64px;line-height:1;margin:10px 0}
+  .price small{font-size:20px;color:#bbb}
+  .price-card ul{list-style:none;padding:0;margin:24px 0 30px}
+  .price-card li{padding:8px 0 8px 28px;border-bottom:1px solid #333;position:relative}
+  .price-card li::before{content:"";position:absolute;left:0;top:16px;width:12px;height:6px;border-left:2px solid #e9a48f;border-bottom:2px solid #e9a48f;transform:rotate(-45deg)}
+  .price-card .btn{background:#fff;color:var(--ink);border-color:#fff}
+  .price-card .btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+  .modes{display:grid;gap:22px}
+  .mode{border:1px solid var(--line);border-radius:14px;padding:28px;background:#fff;display:flex;gap:18px}
+  .mode svg{flex:none;width:44px;height:44px}
+  .mode p{margin:0;color:var(--muted)}
+
+  /* Contact */
+  .contact{background:var(--ink);color:#fff;text-align:center}
+  .contact p{color:#cfcac2;max-width:36em;margin:0 auto 28px;font-size:18px}
+  .contact .btn{background:var(--accent);border-color:var(--accent)}
+  .contact .btn:hover{background:#fff;color:var(--ink);border-color:#fff}
+  .contact .meta{margin-top:24px;font-size:15px;color:#aaa}
+
+  footer{background:#000;color:#999;font-size:14px;padding:30px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+  footer a{color:#ccc;text-decoration:none;margin-right:18px}
+  .draft-hint{color:#e9a48f}
+
+  .disclaimer{font-size:14px;color:var(--muted);margin-top:28px}
+
+  @media (max-width:860px){
+    nav ul{display:none}
+    .hero .wrap,.sit,.pricing,.people{grid-template-columns:1fr}
+    .hero .wrap{padding-top:64px;padding-bottom:64px}
+    .hero-art{order:-1}
+    .hero-art svg{max-width:200px}
+    .timeline{grid-template-columns:1fr}
+    .tl{border-right:none;border-bottom:1px solid var(--line)}
+    .tl:last-child{border-bottom:none}
+    .cards{grid-template-columns:1fr}
+    .card.feature{grid-template-columns:1fr}
+    .card.feature svg{max-width:160px}
+    section{padding:64px 0}
+    .hero .btn.ghost{margin:10px 0 0}
+    .logo{font-size:14px;white-space:nowrap}
+    .btn.small{white-space:nowrap;padding:7px 12px;font-size:13px}
+    .logo-text{display:none}
+    .person{flex-direction:column;gap:14px}
+    .ph{white-space:normal}
+    .price{font-size:52px}
+    .price-card{padding:30px 24px}
+  }
+</style>
 </head>
 <body>
-<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<div class="draft-bar">Entwurf – Texte von Qihui &amp; Patrick zu bestätigen · nicht veröffentlicht</div>
 
 <header class="nav">
   <div class="wrap">
-    <a class="logo" href="./" aria-label="Qi Gong XP Club">
+    <a class="logo" href="#top" aria-label="Qi Gong XP Club">
       <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="#111" stroke-width="2"/><path d="M20 2a18 18 0 0 1 0 36a9 9 0 0 1 0-18a9 9 0 0 0 0-18z" fill="#111"/><circle cx="20" cy="11" r="2.6" fill="#fff"/><circle cx="20" cy="29" r="2.6" fill="#b5452a"/></svg>
-      QI GONG XP CLUB
+      <span class="logo-text">QI GONG XP CLUB</span>
     </a>
     <nav aria-label="Hauptnavigation">
       <ul>
         <li><a href="#ablauf">Ablauf</a></li>
         <li><a href="#aufwaermen">Aufwärmen</a></li>
         <li><a href="#sitzen">Sitzen</a></li>
-        <li><a href="#reflexion">Feedback</a></li>
+        <li><a href="#pushing-hands">Pushing Hands</a></li>
         <li><a href="#wir">Wer wir sind</a></li>
         <li><a href="#mitgliedschaft">Mitgliedschaft</a></li>
       </ul>
     </nav>
-    <a class="btn small" href="#kontakt">Schnuppern anfragen</a>
+    <a class="btn small" href="#kontakt">Club Mitgliedschaft anfragen</a>
   </div>
 </header>
 
-<main id="inhalt">
-
-<!-- HINWEIS SCHWARZ AUF WEISS AG -->
-<section class="ag-notice" id="schwarz-auf-weiss-ag" aria-labelledby="ag-title">
-  <div class="wrap">
-    <div class="box">
-      <p class="eyebrow">Hinweis</p>
-      <h2 id="ag-title">Schwarz auf Weiss AG</h2>
-      <p>Die Hauptversammlung der Schwarz auf Weiss AG hat am 5. September 2026 beschlossen, den Geschäftsbetrieb einzustellen. Die Gesellschaft bietet keine Leistungen mehr an und wird abgewickelt.</p>
-      <p>Wir danken allen Kunden, Partnern und Weggefährten für viele Jahre Zusammenarbeit, von der Continuous Integration bis zum Scrum XP für Hardware.</p>
-      <p class="meta">Bei Fragen zur Gesellschaft: <a href="mailto:info@schwarz-auf-weiss.net">info@schwarz-auf-weiss.net</a> · <a href="impressum-ag.html">Impressum der Schwarz auf Weiss AG</a></p>
-      <p class="next"><strong>Wie es weitergeht:</strong> Werktags um 7:30 Uhr treffen wir uns zum Qi Gong Daily Scrum mit 20 Minuten Qi Gong und 20 Minuten Reflexion, live in Stuttgart-Möhringen oder online. Mitgliedschaft 100 € im Monat. Angeboten von Qihui Jiang und Patrick Sbrzesny. <a href="#qi-gong-xp-club">Zum Qi Gong XP Club ↓</a></p>
-    </div>
-  </div>
-</section>
-
+<main id="top">
 
 <!-- HERO -->
-<section class="hero" id="qi-gong-xp-club" aria-labelledby="hero-title">
+<section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Qigong Experience</p>
-      <h1 id="hero-title">Qi Gong XP Club</h1>
-      <p class="lead">Dein ruhiger, klarer Start in den Tag: erst bewegen und atmen, dann gemeinsam mit der Meisterin auf deine Übungen schauen.</p>
+      <p class="eyebrow">Qi Gong XP Club</p>
+      <h1 id="hero-title">Happy By <span style="white-space:nowrap">Qi Gong XP</span></h1>
+      <p class="tagline" lang="en">Chen Stil Qi Gong · agile eXperience · social, mental and spiritual energy experience</p>
+      <p class="lead">Dein ruhiger, klarer Start in den Tag: erst Chen Qi Gong, dann Pushing Hands, das in Paartanz übergeht. Mit den Qi Gong XP Meistern Qihui &amp; Patrick.</p>
       <ul class="facts">
-        <li>Werktags um 7:30 Uhr</li>
-        <li>20 Min. Qi Gong + 20 Min. Meister-Feedback</li>
+        <li>Werktags 7:30 – 8:00 Uhr</li>
+        <li>15 Min. Chen Qi Gong + 15 Min. Pushing Hands &amp; Paartanz</li>
         <li>Stuttgart-Möhringen oder online</li>
-        <li>100 € im Monat</li>
+        <li>Club Membership 100 € pro Monat</li>
       </ul>
-      <a class="btn" href="#kontakt">Schnuppern anfragen</a>
+      <a class="btn" href="#kontakt">Club Mitgliedschaft anfragen</a>
       <a class="btn ghost" href="#ablauf">So läuft ein Morgen ab</a>
     </div>
     <div class="hero-art" aria-hidden="true">
@@ -80,38 +243,38 @@
 <section id="ablauf" aria-labelledby="ablauf-title">
   <div class="wrap">
     <p class="eyebrow">Was dich erwartet</p>
-    <h2 id="ablauf-title">40 Minuten, jeden Werktag</h2>
-    <p class="intro">Der Ablauf ist immer gleich, damit du nichts planen musst. Du kommst an, bewegst dich, wirst ruhig, bekommst Feedback zu deinen Übungen und gehst gesammelt in deinen Tag.</p>
+    <h2 id="ablauf-title">30 Minuten, jeden Werktag</h2>
+    <p class="intro">Der Ablauf ist immer gleich, damit du nichts planen musst. Du kommst an, bewegst dich, wirst ruhig, übst mit einem Partner Pushing Hands und Paartanz und gehst gesammelt in deinen Tag.</p>
 
     <div class="timeline">
       <div class="tl">
         <div class="time">7:30</div>
-        <span class="dur">20 Min. · mit Qihui Jiang (Jojo)</span>
-        <h3>Qi Gong</h3>
+        <span class="dur">15 Min. · mit Qihui &amp; Patrick</span>
+        <h3>Chen Qi Gong</h3>
         <p>Aufwärmen im Chen-Stil, Seidenfaden-Übungen und stilles Stehen. Zum Abschluss ein paar Minuten Sitzen.</p>
       </div>
       <div class="tl">
-        <div class="time">7:50</div>
-        <span class="dur">20 Min. · mit Qihui</span>
-        <h3>Meister-Feedback-Zeremonie</h3>
-        <p>Im Kreis, mit traditionellem Gruß: alle teilen kurz ihre Wahrnehmung, Qihui gibt als Meisterin Feedback zu den Übungen.</p>
+        <div class="time">7:45</div>
+        <span class="dur">15 Min. · mit Qihui &amp; Patrick</span>
+        <h3>Pushing Hands &amp; Paartanz</h3>
+        <p>Wir beginnen mit Pushing Hands, einer besonderen Form des Paartanzes, und gehen dann in den Paartanz über. <span class="ph">[Tanzstil]</span></p>
       </div>
       <div class="tl">
-        <div class="time">8:10</div>
+        <div class="time">8:00</div>
         <span class="dur">Ende</span>
         <h3>Los geht’s</h3>
         <p>Du startest wach, ruhig und mit einem klaren Fokus in deinen Arbeitstag.</p>
       </div>
     </div>
     <div class="bar" aria-hidden="true"><span></span><span></span></div>
-    <div class="bar-legend"><span>Qi Gong · Körper &amp; Atem</span><span>Feedback · Wahrnehmen &amp; Verfeinern</span></div>
+    <div class="bar-legend"><span>Chen Qi Gong · Körper &amp; Atem</span><span>Pushing Hands &amp; Paartanz · Gemeinsam bewegen</span></div>
   </div>
 </section>
 
 <!-- AUFWÄRMEN -->
 <section id="aufwaermen" class="alt" aria-labelledby="aufwaermen-title">
   <div class="wrap">
-    <p class="eyebrow">Teil 1 · Qi Gong</p>
+    <p class="eyebrow">Teil 1 · Chen Qi Gong · 15 Min.</p>
     <h2 id="aufwaermen-title">Aufwärmen im Chen-Stil</h2>
     <p class="intro">Der Chen-Stil ist vor allem als Taijiquan bekannt. Das dazugehörige Qi Gong besteht aus sanftem Aufwärmen, den Seidenfaden-Übungen und stillem Stehen. Du brauchst keine Vorkenntnisse – alles ist langsam und für Einsteiger gemacht.</p>
 
@@ -184,7 +347,7 @@
       <p class="eyebrow">Die Grundübung</p>
       <h2 id="sitzen-title">Sitzen</h2>
       <p class="zh" style="color:var(--muted);font-style:italic;margin-top:-10px">Jing Zuo · stilles Sitzen</p>
-      <p>Sitzen klingt einfach – und ist genau deshalb eine der wichtigsten Übungen. Es ist der Übergang vom bewegten Qi Gong zur gemeinsamen Reflexion.</p>
+      <p>Sitzen klingt einfach – und ist genau deshalb eine der wichtigsten Übungen. Es ist der Übergang vom Qi Gong zu Pushing Hands.</p>
       <dl class="steps">
         <dt>Haltung</dt>
         <dd>Auf der vorderen Hälfte eines Stuhls oder auf einem Kissen sitzen. Füße flach am Boden, Rücken aufgerichtet, ohne dich anzulehnen. Der Scheitel zieht leicht nach oben, das Kinn ist minimal zurückgenommen, die Schultern sind locker. Die Hände ruhen auf den Oberschenkeln oder übereinander vor dem Bauch. Augen geschlossen oder halb offen mit weichem Blick nach unten.</dd>
@@ -197,57 +360,42 @@
         <dt>Dauer</dt>
         <dd>Für Einsteiger 5 bis 10 Minuten. Geübte sitzen 20 Minuten und länger.</dd>
       </dl>
-      <p class="note">In der Qigong Experience schließen etwa 5 Minuten Sitzen den Qi-Gong-Teil ab und bilden die Brücke zur gemeinsamen Reflexion mit Feedback der Meisterin.</p>
+      <p class="note"><span class="tag">Vorschlag</span>Ein kurzes Sitzen schließt den Qi-Gong-Teil ab und leitet zu Pushing Hands über. <span class="ph">[Aufteilung der 15 Min. von Qihui &amp; Patrick zu bestätigen]</span></p>
     </div>
   </div>
 </section>
 
-<!-- REFLEXION -->
-<section id="reflexion" class="alt" aria-labelledby="reflexion-title">
+<!-- PUSHING HANDS & PAARTANZ -->
+<section id="pushing-hands" class="alt" aria-labelledby="ph-title">
   <div class="wrap">
-    <p class="eyebrow">Teil 2 · Feedback der Meisterin</p>
-    <h2 id="reflexion-title">Die Meister-Feedback-Zeremonie</h2>
-    <p class="lead-quote">Nach der Qigong-Runde kommen wir im Kreis zusammen. In der Meister-Feedback-Zeremonie teilt jede und jeder kurz die eigene Wahrnehmung, und die Meisterin gibt persönliches Feedback zu den Übungen.</p>
-    <p class="intro">Wir beginnen und enden mit dem traditionellen Gruß, als Zeichen von Respekt füreinander und für die Übung. Die Zeremonie leitet Qihui als Meisterin.</p>
-
-    <div class="form3">
-      <div class="q">
-        <h3>Im Kreis</h3>
-        <p>Alle sitzen im Kreis, die Meisterin sitzt mit im Kreis, nicht davor. Online sind alle Kameras an, und die Meisterin ruft der Reihe nach auf.</p>
-      </div>
-      <div class="q">
-        <h3>Der Gruß: Bao Quan Li</h3>
-        <p>Die rechte Faust liegt in der offenen linken Hand vor der Brust, dazu eine leichte Verbeugung. Er steht für Respekt vor Lehrer, Gruppe und Übung.</p>
-      </div>
-      <div class="q">
-        <h3>Die Haltung</h3>
-        <p>Aufrecht sitzen wie bei der Übung Sitzen, ruhig atmen, zuhören ohne zu unterbrechen. Feedback ist eine Gabe, kein Urteil.</p>
-      </div>
+    <p class="eyebrow">Teil 2 · Pushing Hands &amp; Paartanz · 15 Min.</p>
+    <h2 id="ph-title">Pushing Hands &amp; Paartanz</h2>
+    <p class="intro">Wir beginnen mit Pushing Hands, einer besonderen Form des Paartanzes. Pushing Hands (chinesisch Tui Shou) ist eine Partnerübung aus dem Taijiquan: Zwei Menschen bleiben über die Arme in Kontakt und üben, die Kraft des anderen zu spüren und ihr nachzugeben. Aus diesem Kontakt heraus geht es fließend in den Paartanz über, in dem ihr euch gemeinsam als Tanzpaar bewegt.</p>
+    <div class="cards">
+      <article class="card">
+        <span class="num">01 · DER EINSTIEG</span>
+        <h3>Pushing Hands</h3>
+        <p class="zh">Tui Shou</p>
+        <p>Über die Arme in Kontakt bleiben, die Kraft des anderen spüren und ihr nachgeben.</p>
+      </article>
+      <article class="card">
+        <span class="num">02 · DER ÜBERGANG</span>
+        <h3>Paartanz</h3>
+        <p>Vom Partnerkontakt im Pushing Hands in die gemeinsame Bewegung als Tanzpaar.</p>
+        <p><span class="ph">[Tanzstil]</span></p>
+      </article>
+      <article class="card">
+        <span class="num">ABLAUF</span>
+        <h3>So laufen die 15 Minuten ab</h3>
+        <p><span class="ph">[Ablauf von Qihui &amp; Patrick zu bestätigen]</span></p>
+      </article>
+      <article class="card">
+        <span class="num">PARTNER:IN</span>
+        <h3>Allein kommen?</h3>
+        <p><span class="ph">[Ohne eigene:n Tanzpartner:in möglich?]</span></p>
+      </article>
     </div>
-
-    <h3 class="sub">Ablauf in 20 Minuten</h3>
-    <ol class="steps5">
-      <li><div class="min">2<small>Min.</small></div><div><h3>Ankommen und Gruß</h3><p>Kreis bilden, kurz still sitzen, gemeinsamer Gruß.</p></div></li>
-      <li><div class="min">6<small>Min.</small></div><div><h3>Runde der Wahrnehmung</h3><p>Jede Person sagt in ein bis zwei Sätzen, was sie heute bei der Übung gespürt hat. Bei großer Gruppe nur ein Satz pro Person.</p></div></li>
-      <li><div class="min">7<small>Min.</small></div><div><h3>Feedback der Meisterin</h3><p>Sie spricht über das, was sie in der Gruppe gesehen hat, mit einem oder zwei konkreten Korrekturpunkten (zum Beispiel Knie, Schultern, Atem), zeigt sie kurz vor, und alle probieren die Korrektur im Sitzen oder Stehen direkt aus.</p></div></li>
-      <li><div class="min">3<small>Min.</small></div><div><h3>Impuls für den Tag</h3><p>Die Meisterin gibt einen kurzen Gedanken oder eine kleine Aufgabe mit, zum Beispiel „Achte heute dreimal auf deine Schultern“.</p></div></li>
-      <li><div class="min">2<small>Min.</small></div><div><h3>Abschluss: Shou Gong</h3><p>Das Schließen: Hände übereinander auf den Unterbauch legen, drei ruhige Atemzüge, dann gemeinsamer Gruß und Dank.</p></div></li>
-    </ol>
-
-    <h3 class="sub">Fragen, die die Meisterin stellt</h3>
-    <div class="qlist">
-      <div class="q"><div class="mark">1</div><p class="big">Was hast du heute in deinem Körper gespürt?</p></div>
-      <div class="q"><div class="mark">2</div><p class="big">Wo warst du ruhig, wo eher angespannt?</p></div>
-      <div class="q"><div class="mark">3</div><p class="big">Welche Bewegung fiel dir leicht, welche schwer?</p></div>
-      <div class="q"><div class="mark">4</div><p class="big">Was nimmst du aus der Übung mit in deinen Tag?</p></div>
-      <div class="q"><div class="mark">5</div><p class="big">Was hat sich seit gestern verändert?</p></div>
-    </div>
-
-    <div class="copylines">
-      <p>Kleine Korrekturen, sofort ausprobiert, so wächst deine Praxis von Tag zu Tag.</p>
-      <p>Du gehst mit einem klaren Impuls in deinen Tag.</p>
-      <p>Ob vor Ort in Stuttgart-Möhringen oder online: Wir sind ein Kreis.</p>
-    </div>
+    <p class="note"><span class="tag">Offen</span><span class="ph">[Online-Variante Pushing Hands – wie?]</span></p>
   </div>
 </section>
 
@@ -255,15 +403,23 @@
 <section id="wir" aria-labelledby="wir-title">
   <div class="wrap">
     <p class="eyebrow">Wer wir sind</p>
-    <h2 id="wir-title">Die Meisterin</h2>
-    <p class="intro">Der Qi Gong XP Club ist eine Gesellschaft bürgerlichen Rechts von Qihui Jiang und Patrick Sbrzesny. <span class="ph">[PLATZHALTER: kurzer gemeinsamer Vorstellungstext]</span></p>
-    <div class="people" style="grid-template-columns:1fr;max-width:640px">
+    <h2 id="wir-title">Qi Gong XP Meister Qihui &amp; Patrick</h2>
+    <p class="intro">Den Qi Gong XP Club betreiben wir privat. <span class="ph">[Kurzer gemeinsamer Vorstellungstext – zu ergänzen]</span></p>
+    <div class="people">
       <div class="person q2">
         <div class="avatar" aria-hidden="true">QJ</div>
         <div>
           <h3>Qihui Jiang (Jojo)</h3>
-          <p class="role">Qi-Gong-Meisterin · leitet das Qi Gong und die Meister-Feedback-Zeremonie</p>
-          <p><span class="ph">[PLATZHALTER: Kurzvorstellung von Qihui, Text von ihr]</span></p>
+          <p class="role">Qi Gong XP Meisterin</p>
+          <p><span class="ph">[Kurzvorstellung von Qihui – Text von ihr]</span></p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="avatar" aria-hidden="true">PS</div>
+        <div>
+          <h3>Patrick Sbrzesny</h3>
+          <p class="role">Qi Gong XP Meister</p>
+          <p><span class="ph">[Kurzvorstellung von Patrick]</span></p>
         </div>
       </div>
     </div>
@@ -278,30 +434,31 @@
     <p class="intro">Du entscheidest jeden Morgen selbst, ob du vor Ort oder online dabei bist.</p>
     <div class="pricing">
       <div class="price-card">
-        <p class="eyebrow" style="color:#e9a48f">Qi Gong XP Club</p>
-        <div class="price">100 € <small>/ Monat</small></div>
+        <p class="eyebrow" style="color:#e9a48f">Club Membership</p>
+        <div class="price">100 € <small>pro Monat</small></div>
         <ul>
-          <li>Zugang zur Qigong Experience an jedem Werktag</li>
-          <li>7:30 – 8:10 Uhr: 20 Min. Qi Gong + 20 Min. Feedback der Meisterin</li>
+          <li>Zugang zu Happy By Qi Gong XP an jedem Werktag</li>
+          <li>7:30 – 8:00 Uhr: 15 Min. Chen Qi Gong + 15 Min. Pushing Hands &amp; Paartanz</li>
+          <li>Inklusive eines Idogo <span class="ph">[Kurzbeschreibung Idogo]</span></li>
           <li>Live in Stuttgart-Möhringen oder online</li>
-          <li>Für Einsteiger geeignet, keine Vorkenntnisse nötig</li>
+          <li><span class="ph">[Voraussetzungen – zu bestätigen]</span></li>
         </ul>
-        <a class="btn" href="#kontakt">Schnuppern anfragen</a>
-        <p style="font-size:14px;color:#aaa;margin:18px 0 0"><span class="ph">[PLATZHALTER: Laufzeit, Kündigung, Zahlungsweise]</span></p>
+        <a class="btn" href="#kontakt">Club Mitgliedschaft anfragen</a>
+        <p style="font-size:14px;color:#aaa;margin:18px 0 0"><span class="ph">[Laufzeit / Kündigung / Zahlungsweise]</span></p>
       </div>
       <div class="modes">
         <div class="mode">
           <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 4c-7 0-12 5-12 12 0 9 12 24 12 24s12-15 12-24c0-7-5-12-12-12z" fill="none" stroke="#111" stroke-width="2.5"/><circle cx="22" cy="16" r="4.5" fill="#b5452a"/></svg>
           <div>
             <h3>Vor Ort in Möhringen</h3>
-            <p>Gemeinsam üben in Stuttgart-Möhringen.<br><span class="ph">[PLATZHALTER: Adresse des Übungsorts in Möhringen]</span></p>
+            <p>Gemeinsam üben in Stuttgart-Möhringen.<br><span class="ph">[Adresse]</span></p>
           </div>
         </div>
         <div class="mode">
           <svg viewBox="0 0 44 44" aria-hidden="true"><rect x="4" y="8" width="36" height="24" rx="3" fill="none" stroke="#111" stroke-width="2.5"/><path d="M14 38h16M22 32v6" stroke="#111" stroke-width="2.5" stroke-linecap="round"/><circle cx="22" cy="20" r="4.5" fill="#b5452a"/></svg>
           <div>
             <h3>Online von zu Hause</h3>
-            <p>Live per Video dabei, mit Kamera oder ohne.<br><span class="ph">[PLATZHALTER: Video-Plattform / Zugangslink]</span></p>
+            <p>Live per Video dabei, mit Kamera oder ohne.<br><span class="ph">[Video-Plattform / Zugangslink]</span> <span class="ph">[Online-Variante Pushing Hands – wie?]</span></p>
           </div>
         </div>
         <div class="mode">
@@ -319,11 +476,13 @@
 <!-- KONTAKT -->
 <section id="kontakt" class="contact" aria-labelledby="kontakt-title">
   <div class="wrap">
-    <p class="eyebrow" style="color:#e9a48f">Kontakt</p>
-    <h2 id="kontakt-title">Lust, einmal reinzuschnuppern?</h2>
-    <p>Schreib uns kurz, ob du lieber vor Ort oder online dabei sein möchtest und an welchem Tag du kommen willst. Wir melden uns persönlich bei dir.</p>
-    <a class="btn" href="mailto:PLATZHALTER-E-MAIL?subject=Schnuppern%20im%20Qi%20Gong%20XP%20Club">Schnuppern anfragen</a>
-    <div class="meta"><span class="ph">[PLATZHALTER: E-Mail-Adresse des Clubs]</span> · <span class="ph">[PLATZHALTER: Telefon]</span> · <span class="ph">[PLATZHALTER: Konditionen fürs Schnuppern]</span></div>
+    <p class="eyebrow" style="color:#e9a48f">Club Mitgliedschaft</p>
+    <h2 id="kontakt-title">Nicht für jeden. Vielleicht für dich.</h2>
+    <p>Die Mitgliedschaft im Qi Gong XP Club gibt es nur auf Anfrage. Wir sind bewusst ein kleiner, ausgewählter Kreis, und es ist nicht ganz leicht, hineinzukommen.</p>
+    <p>Wir suchen Menschen, die es ernst meinen: die jeden Werktag um 7:30 Uhr da sind und sich verbindlich auf die gemeinsame Praxis einlassen. Wenn das zu dir passt, freuen wir uns auf deine Anfrage.</p>
+    <p style="color:#fff"><strong>Die Aufnahme erfolgt nach einem persönlichen Gespräch mit Qihui &amp; Patrick.</strong></p>
+    <a class="btn" href="mailto:[E-Mail]?subject=Anfrage%20Club%20Mitgliedschaft%20%E2%80%93%20Happy%20By%20Qi%20Gong%20XP">Club Mitgliedschaft anfragen</a>
+    <div class="meta"><span class="ph">[E-Mail]</span> · <span class="ph">[Telefon]</span></div>
   </div>
 </section>
 
@@ -335,8 +494,9 @@
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Qi Gong XP Club GbR · schwarz-auf-weiss.net</div>
-    <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="impressum-ag.html">Impressum Schwarz auf Weiss AG</a><a href="datenschutz.html">Datenschutz</a></nav>
+    <div>© <span class="ph">[Jahr]</span> Qi Gong XP Club · schwarz-auf-weiss.net</div>
+    <div><a href="#">Impressum <span class="ph">[folgt]</span></a><a href="#">Datenschutz <span class="ph">[folgt]</span></a></div>
+    <div class="draft-hint">Entwurf – Texte von Qihui &amp; Patrick zu bestätigen</div>
   </div>
 </footer>
 
