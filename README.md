@@ -14,7 +14,7 @@ Reines HTML/CSS, kein Build-Schritt, kein JavaScript, keine Cookies, keine exter
 | `datenschutz.html` | Datenschutzerklärung (Hosting Hetzner, Server-Logs, E-Mail-Kontakt, keine Cookies) |
 | `assets/style.css`, `assets/favicon.svg` | Gestaltung |
 | `.htaccess` | Apache-Einstellungen (Sicherheits-Header; HTTPS-Weiterleitung auskommentiert) |
-| `ci/deploy.yml` | Deployment-Workflow per SFTP auf Hetzner Webhosting (noch zu aktivieren, siehe unten) |
+| `.github/workflows/deploy.yml` | Deployment-Workflow per SFTP auf Hetzner Webhosting (noch zu aktivieren, siehe unten) |
 
 ## Lokale Vorschau
 
@@ -35,15 +35,15 @@ Außerdem enthält der Kontakt-Button in `index.html` den Link `mailto:PLATZHALT
 
 ## Deployment (Hetzner Webhosting)
 
-**Workflow aktivieren (einmalig):** Der Workflow liegt als `ci/deploy.yml` im Repo, weil das gh-Token auf der Box keinen `workflow`-Scope hat und GitHub deshalb Dateien unter `.github/workflows/` abgelehnt hat. Aktivieren mit:
+**Workflow aktivieren (einmalig):** Der Workflow liegt als `.github/workflows/deploy.yml` im Repo, weil das gh-Token auf der Box keinen `workflow`-Scope hat und GitHub deshalb Dateien unter `.github/workflows/` abgelehnt hat. Aktivieren mit:
 
 ```bash
 gh auth refresh -h github.com -s workflow   # einmalig im Browser bestätigen
-mkdir -p .github/workflows && git mv ci/deploy.yml .github/workflows/deploy.yml
+mkdir -p .github/workflows && git mv .github/workflows/deploy.yml .github/workflows/deploy.yml
 git commit -m "Deploy-Workflow aktivieren" && git push
 ```
 
-Alternativ im GitHub-Webinterface die Datei `.github/workflows/deploy.yml` mit dem Inhalt von `ci/deploy.yml` anlegen. Ohne Secrets läuft er danach grün durch und überspringt den Upload.
+Alternativ im GitHub-Webinterface die Datei `.github/workflows/deploy.yml` mit dem Inhalt von `.github/workflows/deploy.yml` anlegen. Ohne Secrets läuft er danach grün durch und überspringt den Upload.
 
 Hetzner Webhosting S bietet SFTP (Port 22) und FTPS (Port 21), aber keinen SSH-Shell-Login. Darum lädt der Workflow mit `lftp mirror` per SFTP hoch statt mit rsync.
 
