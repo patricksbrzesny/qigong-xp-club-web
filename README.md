@@ -5,7 +5,7 @@ Statische Website (reines HTML/CSS, kein JavaScript, keine Cookies).
 ## Veröffentlichung
 
 Die Seite wird über **GitHub Pages** aus dem Branch `main` (Wurzelverzeichnis) veröffentlicht. Jeder Push auf `main` geht automatisch live.
-Die eigene Domain ist in der Datei `CNAME` hinterlegt.
+Die eigene Domain wird beim Go-live in den Pages-Einstellungen eingetragen (legt die Datei `CNAME` an).
 
 ## DNS bei united-domains
 
